@@ -1,7 +1,7 @@
 {
-  "name": "install-local",
+  "name": "install-local-only",
   "version": "1.0.0",
-  "description": "A small module for installing local packages. Works for both npm >= 5 and older versions.",
+  "description": "A small module for installing local packages *that ignores package-lock.json*. Works for both npm >= 5 and older versions.",
   "main": "src/index.js",
   "typings": "src/index.d.ts",
   "scripts": {
@@ -20,11 +20,11 @@
     "release:major": "npm version major -m \"chore(release): %s\""
   },
   "bin": {
-    "install-local": "bin/install-local"
+    "install-local-only": "bin/install-local-only"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicojs/node-install-local.git"
+    "url": "git+https://github.com/seanstern/node-install-local-only.git"
   },
   "keywords": [
     "npm",
@@ -32,12 +32,12 @@
     "local",
     "yarn"
   ],
-  "author": "Nico Jansen <jansennico@gmail.com>",
+  "author": "Sean Stern <sean.stern@outlook.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/nicojs/node-install-local/issues"
+    "url": "https://github.com/seanstern/node-install-local-only/issues"
   },
-  "homepage": "https://github.com/nicojs/node-install-local#readme",
+  "homepage": "https://github.com/nicojs/node-install-local-only#readme",
   "devDependencies": {
     "@stryker-mutator/core": "^2.0.0",
     "@stryker-mutator/html-reporter": "^2.0.0",
