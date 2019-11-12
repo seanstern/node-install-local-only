@@ -1,8 +1,9 @@
+# Purpose
+This is a fork of [install-local](https://www.npmjs.com/package/install-local). This fork is being used a stopgap until the install-local project is updated to provide an option that ignores package.json during installation.
+
 # Install local only
 
 Installs npm/yarn packages locally without symlink *and ignores package-lock.json*, also in npm 5. Exactly the same as your production installation, no compromises.
-
-This is a fork of [install-local](https://www.npmjs.com/package/install-local) this is being used a stopgap until project is updated to provide option that ignores package.json.
 
 ## Getting started
 
