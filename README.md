@@ -1,33 +1,32 @@
-[![Build Status](https://travis-ci.org/nicojs/node-install-local.svg?branch=master)](https://travis-ci.org/nicojs/node-install-local)
-[![Stryker report](https://badge.stryker-mutator.io/github.com/nicojs/node-install-local/master)](https://dashboard.stryker-mutator.io/)
+# Install local only
 
-# Install local
+Installs npm/yarn packages locally without symlink *and ignores package-lock.json*, also in npm 5. Exactly the same as your production installation, no compromises.
 
-Installs npm/yarn packages locally without symlink, also in npm 5. Exactly the same as your production installation, no compromises.
+This is a fork of [install-local](https://www.npmjs.com/package/install-local) this is being used a stopgap until project is updated to provide option that ignores package.json.
 
 ## Getting started
 
 Install with
 
 ```bash
-npm install -g install-local
+npm install -g install-local-only
 ```
 
 **or** for occasional use, without installation
 
 ```bash
-$ npx install-local
+$ npx install-local-only
 ```
 
-You can use install-local from command line or programmatically.
+You can use install-local-only from command line or programmatically.
 
 ## Command line:
 
 ```bash
 Usage: 
-$ install-local                                       # 1
-$ install-local [options] <directory>[ <directory>]   # 2
-$ install-local --target-siblings                     # 3
+$ install-local-only                                       # 1
+$ install-local-only [options] <directory>[ <directory>]   # 2
+$ install-local-only --target-siblings                     # 3
 ```
 
 Installs a package from the filesystem into the current directory.
@@ -42,16 +41,16 @@ which depend on this package by putting it in the "localDependencies".
 Useful in a [lerna](https://github.com/lerna/lerna) style monorepo.
 
 Examples:
-* `install-local`
+* `install-local-only`
 Install the "localDependencies" of your current package
-* `install-local ..`
+* `install-local-only ..`
 Install the package located in the parent folder into the current directory.
-* `install-local --save ../sibling ../sibling2`
+* `install-local-only --save ../sibling ../sibling2`
 Install the packages in 2 sibling directories into the current directory.
-* `install-local --help`
+* `install-local-only --help`
 Print this help
 
-See [Programmatically](#programmatically) to see how use `install-local` from node.
+See [Programmatically](#programmatically) to see how use `install-local-only` from node.
 
 ## Why?
 
