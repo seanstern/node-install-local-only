@@ -1,5 +1,5 @@
 # Purpose
-This is a fork of [install-local](https://www.npmjs.com/package/install-local). This fork is being used a stopgap until the install-local project is updated to provide an option that ignores package.json during installation.
+This is a fork of [install-local](https://www.npmjs.com/package/install-local). This fork is being used a stopgap until the install-local project is updated to provide an option that ignores package-lock.json during installation.
 
 # Install local only
 
