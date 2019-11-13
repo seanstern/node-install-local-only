@@ -57,9 +57,9 @@ describe('LocalInstaller install', () => {
 
         it('should install correct packages', async () => {
             await sut.install();
-            expect(execStub).calledWith(`npm i --no-save ${tmp('b-0.0.1.tgz')} ${tmp('c-0.0.2.tgz')}`,
+            expect(execStub).calledWith(`npm i --no-save --no-package-lock ${tmp('b-0.0.1.tgz')} ${tmp('c-0.0.2.tgz')}`,
                 { cwd: resolve('/a'), maxBuffer: TEN_MEGA_BYTE });
-            expect(execStub).calledWith(`npm i --no-save ${tmp('e-0.0.4.tgz')}`,
+            expect(execStub).calledWith(`npm i --no-save --no-package-lock ${tmp('e-0.0.4.tgz')}`,
                 { cwd: resolve('d'), maxBuffer: TEN_MEGA_BYTE });
         });
 
@@ -105,7 +105,7 @@ describe('LocalInstaller install', () => {
 
         it('should install scoped packages', async () => {
             await sut.install();
-            expect(execStub).calledWith(`npm i --no-save ${tmp('s-b-0.0.1.tgz')}`);
+            expect(execStub).calledWith(`npm i --no-save --no-package-lock ${tmp('s-b-0.0.1.tgz')}`);
         });
     });
 
@@ -120,7 +120,8 @@ describe('LocalInstaller install', () => {
 
         it('should call npm with correct env vars', async () => {
             await sut.install();
-            expect(execStub).calledWith(`npm i --no-save ${tmp('b-0.0.1.tgz')}`, { env: npmEnv, cwd: resolve('/a'), maxBuffer: TEN_MEGA_BYTE });
+            // tslint:disable-next-line: max-line-length
+            expect(execStub).calledWith(`npm i --no-save --no-package-lock ${tmp('b-0.0.1.tgz')}`, { env: npmEnv, cwd: resolve('/a'), maxBuffer: TEN_MEGA_BYTE });
         });
     });
 

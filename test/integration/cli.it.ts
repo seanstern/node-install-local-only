@@ -7,7 +7,7 @@ import * as rimraf from 'rimraf';
 import { Package } from '../../src/index';
 import { PackageJson } from './../../src/index';
 
-const installLocal = path.resolve('bin', 'install-local');
+const installLocal = path.resolve('bin', 'install-local-only');
 
 describe('install-local cli given 3 packages', () => {
 

@@ -1,6 +1,6 @@
 {
   "name": "install-local-only",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small module for installing local packages *that ignores package-lock.json*. Works for both npm >= 5 and older versions.",
   "main": "src/index.js",
   "typings": "src/index.d.ts",
@@ -37,7 +37,7 @@
   "bugs": {
     "url": "https://github.com/seanstern/node-install-local-only/issues"
   },
-  "homepage": "https://github.com/nicojs/node-install-local-only#readme",
+  "homepage": "https://github.com/seanstern/node-install-local-only#readme",
   "devDependencies": {
     "@stryker-mutator/core": "^2.0.0",
     "@stryker-mutator/html-reporter": "^2.0.0",
@@ -67,7 +67,7 @@
     "typescript": "^3.5.2"
   },
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "mz": "^2.7.0",
     "rimraf": "^2.6.3",
     "uniqid": "^5.0.3"

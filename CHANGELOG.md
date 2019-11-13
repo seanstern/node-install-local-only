@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/seanstern/node-install-local-only/compare/v1.0.0...v1.0.1) (2019-11-13)
+
+
+
+## [1.0.1](https://github.com/seanstern/node-install-local-only/compare/v1.0.0...v1.0.1) (2019-11-13)
+
+
+
 # [1.0.0](https://github.com/nicojs/node-install-local/compare/v0.6.2...v1.0.0) (2019-02-12)
 
 
